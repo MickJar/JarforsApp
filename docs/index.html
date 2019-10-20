@@ -57,6 +57,9 @@
             navigator.serviceWorker.register('/JarforsApp/service-worker.js')
                 .then(function () {
                     console.log('Service Worker Registered');
+                }, function(err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
                 });
         }
     </script>
