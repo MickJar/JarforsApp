@@ -1,6 +1,6 @@
 ﻿console.log("This is service worker talking");
 var cacheName = 'jarfors';
-var rootPath = '';
+var rootPath = '/JarforsApp';
 var filesToCache = [
     rootPath + '/',
     //Html and css files
