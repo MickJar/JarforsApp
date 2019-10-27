@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Jarfors</title>
-    <base href="/JarforsApp/" />
+    <base href="/JarforsApp" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/site.css" rel="stylesheet" />
     <link rel="manifest" href="manifest.json">
@@ -19,30 +19,42 @@
                 width: 40px;
                 height: 40px;
                 background-color: #36688D;
-
                 margin: 100px auto;
-                    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-                    animation: sk-rotateplane 1.2s infinite ease-in-out;
+                -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+                animation: sk-rotateplane 1.2s infinite ease-in-out;
             }
 
-                @-webkit-keyframes sk-rotateplane {
-                    0% { -webkit-transform: perspective(120px) }
-                    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
-                    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+            @-webkit-keyframes sk-rotateplane {
+                0% {
+                    -webkit-transform: perspective(120px)
                 }
 
-                @keyframes sk-rotateplane {
-                    0% { 
-                        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-                        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
-                    } 50% { 
-                        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-                        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
-                    } 100% { 
-                        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-                        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-                    }
+                50% {
+                    -webkit-transform: perspective(120px) rotateY(180deg)
                 }
+
+                100% {
+                    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+                }
+            }
+
+            @keyframes sk-rotateplane {
+                0% {
+                    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+                }
+
+                50% {
+                    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+                }
+
+                100% {
+                    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                }
+            }
+
             body {
                 background-color: #F3CD05;
             }
@@ -57,7 +69,7 @@
             navigator.serviceWorker.register('/JarforsApp/service-worker.js')
                 .then(function () {
                     console.log('Service Worker Registered');
-                }, function(err) {
+                }, function (err) {
                     // registration failed :(
                     console.log('ServiceWorker registration failed: ', err);
                 });
