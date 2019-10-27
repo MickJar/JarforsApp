@@ -12,7 +12,7 @@ var filesToCache = [
     rootPath + '/css/open-iconic/font/fonts/open-iconic.woff',
     //'/css/loading.css',
     //Blazor framework
-     rootPath + '_framework/blazor.webassembly.js',
+     rootPath + '/_framework/blazor.webassembly.js',
     rootPath + '/_framework/blazor.boot.json',
     //Our additional files
      rootPath + '/manifest.json',
@@ -26,7 +26,7 @@ var filesToCache = [
     //'/_framework/_bin/Microsoft.AspNetCore.Blazor.dll',
      rootPath + '/_framework/_bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll',
      rootPath + '/_framework/_bin/Microsoft.Extensions.DependencyInjection.dll',
-     rootPath + '_framework/_bin/Microsoft.JSInterop.dll',
+     rootPath + '/_framework/_bin/Microsoft.JSInterop.dll',
      rootPath + '/_framework/_bin/mscorlib.dll',
      rootPath + '/_framework/_bin/System.Net.Http.dll',
      rootPath + '/_framework/_bin/Mono.WebAssembly.Interop.dll',
