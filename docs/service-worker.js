@@ -33,7 +33,6 @@ var filesToCache = [
      rootPath + '/_framework/_bin/System.dll',
     rootPath + '/_framework/_bin/System.Core.dll',
     //Pages
-    rootPath + '/counter',
     //Sounds
     rootPath + '/sounds/Darlig.m4a',
      rootPath + '/sounds/God.m4a',
