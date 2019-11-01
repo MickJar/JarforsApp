@@ -26,5 +26,9 @@
   {
     "Name": "HackerMan",
     "Url": "/JarforsApp/sounds/HackerMan.m4a"
+  },
+  {
+    "Name": "Bird Watching",
+    "Url": "/JarforsApp/sounds/BirdWatching.m4a"
   }
 ]
