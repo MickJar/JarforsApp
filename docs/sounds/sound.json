@@ -22,5 +22,9 @@
   {
     "Name": "Skidegodt",
     "Url": "/JarforsApp/sounds/Skidegodt.m4a"
-  }
+  },
+  {
+    "Name": "HackerMan",
+    "Url": "/JarforsApp/sounds/HackerMan.m4a"
+  },
 ]
