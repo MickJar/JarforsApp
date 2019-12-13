@@ -38,6 +38,7 @@ var filesToCache = [
      rootPath + '/sounds/God.m4a',
      rootPath + '/sounds/Pepshpepsh.m4a',
     rootPath + '/sounds/Woosh.m4a',
+    root Path + '/sounds/Mikkel-1.m4a',
     //The compiled project .dll's
     rootPath + '/_framework/_bin/Jarfors-App.dll'
 ];
